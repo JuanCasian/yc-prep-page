@@ -96,7 +96,7 @@ function App() {
       <button
         disabled={disabled}
         onClick={() => {
-          const num = Math.floor(Math.random() * Math.floor(77));
+          const num = Math.floor(Math.random() * Math.floor(preguntas.length));
           setPregunta(preguntas[num]);
           console.log(num);
           setDisabled(true);
