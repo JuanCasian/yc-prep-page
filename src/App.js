@@ -85,6 +85,8 @@ const preguntas = [
   "What have you learned so far from working on it?",
 ];
 
+// Si quieren sin shuffle comenten de esta línea
+
 const valorDeI = preguntas.length - 1;
 for (let i = valorDeI; i > 0; i--) {
   if (i === 1) {
@@ -95,6 +97,8 @@ for (let i = valorDeI; i > 0; i--) {
   preguntas[i] = preguntas[j];
   preguntas[j] = temp;
 }
+
+// a esta otra
 
 function App() {
   const [disabled, setDisabled] = useState(false);
